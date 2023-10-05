@@ -138,6 +138,14 @@
       "headingKeywords": {}
     },
     {
+      "src": "team/andrewjanong.md",
+      "title": "Andrew Daniel Janong's Project Portfolio Page",
+      "headings": {
+        "project-keepintouch": "Project: KeepInTouch"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "team/johndoe.md",
       "title": "John Doe's Project Portfolio Page",
       "headings": {
