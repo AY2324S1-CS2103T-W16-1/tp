@@ -7,11 +7,11 @@
       "headings": {
         "about-us": "About Us",
         "project-team": "Project team",
-        "john-doe": "John Doe",
-        "jane-doe": "Jane Doe",
-        "johnny-doe": "Johnny Doe",
-        "jean-doe": "Jean Doe",
-        "james-doe": "James Doe"
+        "andrew-daniel-janong": "Andrew Daniel Janong",
+        "ho-khee-wei": "Ho Khee Wei",
+        "joseph-oliver-lim": "Joseph Oliver Lim",
+        "nicholas-jimmy-alden": "Nicholas Jimmy Alden",
+        "wang-zihan": "Wang Zihan"
       },
       "headingKeywords": {}
     },
@@ -167,6 +167,14 @@
       "headings": {
         "project-overview": "Project  Overview:",
         "summary-of-contributions": "Summary of Contributions"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/nixx162.md",
+      "title": "Nicholas Jimmy Alden's Project Portfolio Page",
+      "headings": {
+        "project-keepintouch": "Project: KeepInTouch"
       },
       "headingKeywords": {}
     },
