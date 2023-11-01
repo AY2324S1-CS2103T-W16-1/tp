@@ -115,6 +115,8 @@
         "adding-a-person-add-contact": "Adding a person: add contact",
         "listing-all-persons-list-contact": "Listing all persons : list contact",
         "deleting-a-person-delete-contact": "Deleting a person : delete contact",
+        "adding-tags-add-tag": "Adding  tags : add tag",
+        "deleting-tags-delete-tag": "Deleting  tags : delete tag",
         "adding-notes-to-a-contact-add-note": "Adding notes to a contact: add note",
         "listing-all-notes-list-notes": "Listing all notes : list notes",
         "deleting-a-note-delete-note": "Deleting a note : delete note",

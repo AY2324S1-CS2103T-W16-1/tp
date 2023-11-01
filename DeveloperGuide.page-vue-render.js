@@ -392,7 +392,7 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to add tags to a c
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. User inputs a non-alphanumeric tag.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. KeepInTouch shows a message indicating that tags should be alphanumeric.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. User inputs a contact that does not exist.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. KeepInTouch shows a message indicating the contact cannot be found.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])])])}
+with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. User inputs incomplete data.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. KeepInTouch shows a message indicating incomplete data.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. User inputs a non-alphanumeric tag.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. KeepInTouch shows a message indicating that tags should be alphanumeric.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1c. User inputs a contact that does not exist.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1c1. KeepInTouch shows a message indicating that the contact cannot be found.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Use case: UC12 - Delete tags from a contact")])])}
@@ -407,7 +407,7 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to delete tags fro
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. User inputs incomplete data.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. KeepInTouch shows a message indicating incomplete data.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. User inputs a contact that does not exist.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. KeepInTouch shows a message indicating that the contact cannot be found.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1c. User inputs a tag that does not exist.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1c1. KeepInTouch shows a message indicating that the tags cannot be found.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
+with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. User inputs incomplete data.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. KeepInTouch shows a message indicating incomplete data.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. User inputs a non-alphanumeric tag.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. KeepInTouch shows a message indicating that tags should be alphanumeric.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1c. User inputs a contact that does not exist.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1c1. KeepInTouch shows a message indicating that the contact cannot be found.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Use case: UC13 - Edit tags in a contact")])])}
@@ -422,7 +422,7 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to edit tags in a 
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. User inputs incomplete data.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. KeepInTouch shows a message indicating incomplete data.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. User inputs a contact that does not exist.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. KeepInTouch shows a message indicating that the contact cannot be found.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1c. User inputs a tag that does not exist.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1c1. KeepInTouch shows a message indicating that the tags cannot be found.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
+with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. User inputs incomplete data.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. KeepInTouch shows a message indicating incomplete data.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. User inputs a contact that does not exist.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. KeepInTouch shows a message indicating that the contact cannot be found.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1c. User inputs a tag that does not exist.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1c1. KeepInTouch shows a message indicating that the tag cannot be found.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Use case: UC14 - Exit the program")])])}
@@ -470,6 +470,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases …​ }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Thu, 2 Nov 2023, 1:04:43 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Thu, 2 Nov 2023, 1:13:35 GMT+8]")])])])}
 }];
   
