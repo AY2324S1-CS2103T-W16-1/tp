@@ -19,7 +19,7 @@ public class AddEventCommand extends AddCommand {
 
     public static final String MESSAGE_USAGE = COMMAND_WORD + " " + SECONDARY_COMMAND_WORD
             + ": Adds an event to a contact.\n"
-            + "Usage:  add event -n CONTACT_NAME -en EVENT_NAME -st "
+            + "Usage:  add event -id CONTACT_ID -en EVENT_NAME -st "
             + "START_TIME [-et END_TIME] [-loc LOCATION] [-i INFORMATION]";
 
     private final Event toAdd;
