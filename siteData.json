@@ -114,6 +114,7 @@
         "viewing-help-help": "Viewing help : help",
         "listing-all-contacts-list-contact": "Listing all contacts : list contact",
         "adding-a-contact-add-contact": "Adding a contact : add contact",
+        "listing-all-persons-list-contact": "Listing all persons : list contact",
         "deleting-a-contact-delete-contact": "Deleting a contact : delete contact",
         "adding-tags-add-tag": "Adding tags : add tag",
         "deleting-tags-delete-tag": "Deleting tags : delete tag",
