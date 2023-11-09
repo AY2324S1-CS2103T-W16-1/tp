@@ -14,7 +14,7 @@ with(this){return _c('p',[_v("KeepInTouch is a "),_c('strong',[_v("desktop app f
 with(this){return _c('h2',{attrs:{"id":"table-of-contents"}},[_v("Table of Contents"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#table-of-contents","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('a',{attrs:{"href":"#quick-start"}},[_v("Quick Start")])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#features"}},[_v("Features")]),_v(" "),_c('ul',[_c('li',[_c('a',{attrs:{"href":"#viewing-help--help"}},[_v("Viewing help : "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("help")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#listing-contacts--list-contact"}},[_v("Listing contacts: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list contact")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#adding-a-contact--add-contact"}},[_v("Adding a contact: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add contact")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#deleting-a-contact--delete-contact"}},[_v("Deleting a contact: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete contact")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#finding-a-contact--find"}},[_v("Finding a contact: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#adding-tags--add-tag"}},[_v("Adding tags: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add tag")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#deleting-tags--delete-tag"}},[_v("Deleting tags: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete tag")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#adding-notes-to-a-contact--add-note"}},[_v("Adding a note: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add note")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#deleting-a-note--delete-note"}},[_v("Deleting a note: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete note")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#listing-events--list-events"}},[_v("Listing events: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list events")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#adding-events--add-event"}},[_v("Adding an event: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add event")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#deleting-an-event--delete-event"}},[_v("Deleting an event: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete event")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#clearing-all-data--clear"}},[_v("Clearing data: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("clear")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#exiting-the-program--exit"}},[_v("Exit: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("exit")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#other-features"}},[_v("Other Features: "),_c('em',[_v("coming soon...")])])])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#faq"}},[_v("FAQ")])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#known-issues"}},[_v("Known Issues")])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#command-summary"}},[_v("Command Summary")])])])}
+with(this){return _c('ul',[_c('li',[_c('a',{attrs:{"href":"#quick-start"}},[_v("Quick Start")])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#features"}},[_v("Features")]),_v(" "),_c('ul',[_c('li',[_c('a',{attrs:{"href":"#viewing-help-help"}},[_v("Viewing help: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("help")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#listing-contacts-list-contact"}},[_v("Listing contacts: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list contact")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#adding-a-contact-add-contact"}},[_v("Adding a contact: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add contact")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#deleting-a-contact-delete-contact"}},[_v("Deleting a contact: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete contact")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#finding-a-contact-find"}},[_v("Finding a contact: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#adding-tags-add-tag"}},[_v("Adding tags: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add tag")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#deleting-tags-delete-tag"}},[_v("Deleting tags: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete tag")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#adding-notes-to-a-contact-add-note"}},[_v("Adding notes to a contact: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add note")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#deleting-a-note-delete-note"}},[_v("Deleting a note: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete note")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#listing-events-list-events"}},[_v("Listing events: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list events")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#adding-events-add-event"}},[_v("Adding an event: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add event")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#deleting-an-event-delete-event"}},[_v("Deleting an event: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete event")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#clearing-data-clear"}},[_v("Clearing data: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("clear")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#exiting-the-program-exit"}},[_v("Exiting the program: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("exit")])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#saving-the-data"}},[_v("Saving the data")])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#other-features"}},[_v("Other Features: "),_c('em',[_v("coming soon...")])])])])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#faq"}},[_v("FAQ")])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#known-issues"}},[_v("Known Issues")])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#command-summary"}},[_v("Command Summary")])])])}
 },function anonymous(
 ) {
 with(this){return _c('h2',{attrs:{"id":"quick-start"}},[_v("Quick start"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#quick-start","onclick":"event.stopPropagation()"}})])}
@@ -26,7 +26,7 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("Ensure you have Java "),_c('code
 with(this){return _c('h2',{attrs:{"id":"features"}},[_v("Features"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#features","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"viewing-help-help"}},[_v("Viewing help : "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("help")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#viewing-help-help","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"viewing-help-help"}},[_v("Viewing help: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("help")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#viewing-help-help","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("help [COMMAND_WORD]")])])}
@@ -38,7 +38,7 @@ with(this){return _c('ul',[_c('li',[_v("Add "),_c('code',{pre:true,attrs:{"class
 with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("help add")])])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"listing-contacts-list-contact"}},[_v("Listing contacts : "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list contact")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#listing-contacts-list-contact","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"listing-contacts-list-contact"}},[_v("Listing contacts: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list contact")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#listing-contacts-list-contact","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list contact [-t TAGNAME...]")])])}
@@ -50,7 +50,7 @@ with(this){return _c('ul',[_c('li',[_v("Lists all contacts if no tags passed.")]
 with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list contact")]),_v(" to show all contacts.")]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list contact -t Recruiter")]),_v(" to show all contacts which have a recruiter tag.")])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"adding-a-contact-add-contact"}},[_v("Adding a contact : "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add contact")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#adding-a-contact-add-contact","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"adding-a-contact-add-contact"}},[_v("Adding a contact: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add contact")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#adding-a-contact-add-contact","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add contact -n NAME -p PHONE_NUMBER -a ADDRESS -e EMAIL [-t TAGNAME...]")])])}
@@ -59,7 +59,7 @@ with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hlj
 with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add contact -n Aaron -p 12345678 -a Baker Street 12 -e aaron123@gmail.com")])])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"deleting-a-contact-delete-contact"}},[_v("Deleting a contact : "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete contact")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#deleting-a-contact-delete-contact","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"deleting-a-contact-delete-contact"}},[_v("Deleting a contact: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete contact")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#deleting-a-contact-delete-contact","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete contact CONTACT_ID")])])}
@@ -68,7 +68,7 @@ with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hlj
 with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete contact 1")]),_v(" deletes the first contact in the contact list.")])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"finding-a-contact-find"}},[_v("Finding a contact : "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#finding-a-contact-find","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"finding-a-contact-find"}},[_v("Finding a contact: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#finding-a-contact-find","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Finds a contact by their name by matching keywords with the contact's name. Keywords are "),_c('strong',[_v("case insensitive")]),_v(".")])}
@@ -80,7 +80,7 @@ with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hlj
 with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find Alex")])])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"adding-tags-add-tag"}},[_v("Adding tags : "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add tag")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#adding-tags-add-tag","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"adding-tags-add-tag"}},[_v("Adding tags: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add tag")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#adding-tags-add-tag","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add tag -id CONTACT_ID -t TAGNAME...")])])}
@@ -95,7 +95,7 @@ with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inl
 with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add tag -id 1 -t Frontend")]),_v(" adds a tag with tag name \"Frontend\" to the first contact in the contact list.")]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add tag -id 1 -t Frontend -t Java")]),_v(" adds two tags with tag name \"Frontend\" and \"Java\" to the first contact in the contact list.")])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"deleting-tags-delete-tag"}},[_v("Deleting tags : "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete tag")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#deleting-tags-delete-tag","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"deleting-tags-delete-tag"}},[_v("Deleting tags: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete tag")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#deleting-tags-delete-tag","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete tag -id CONTACT_ID -t TAGNAME...")])])}
@@ -110,7 +110,7 @@ with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inl
 with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete tag -id 1 -t Frontend")]),_v(" deletes a tag with tag name \"Frontend\" from the first contact in the contact list.")]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add tag -id 1 -t Frontend -t Java")]),_v(" deletes two tags with tag name \"Frontend\" and \"Java\" from the first contact in the contact list.")])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"adding-notes-to-a-contact-add-note"}},[_v("Adding notes to a contact : "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add note")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#adding-notes-to-a-contact-add-note","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"adding-notes-to-a-contact-add-note"}},[_v("Adding notes to a contact: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add note")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#adding-notes-to-a-contact-add-note","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add note -id CONTACT_ID -tit NOTE_TITLE -con NOTE_CONTENT")])])}
@@ -119,7 +119,7 @@ with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hlj
 with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add note -id 1 -tit Meeting Topics -con The topic is about the framework design of the project")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add note -id 2 -tit Open Position -con Applications for SWE full-time positions will open soon")])])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"deleting-a-note-delete-note"}},[_v("Deleting a note : "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete note")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#deleting-a-note-delete-note","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"deleting-a-note-delete-note"}},[_v("Deleting a note: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete note")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#deleting-a-note-delete-note","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete note -id CONTACT_ID -nid NOTE_ID")])])}
@@ -131,7 +131,7 @@ with(this){return _c('ul',[_c('li',[_v("Deletes the note with the id "),_c('code
 with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete note -id 1 -nid 1")]),_v(" deletes the first note from the first contact in the contact list.")])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"listing-events-list-events"}},[_v("Listing events : "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list events")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#listing-events-list-events","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"listing-events-list-events"}},[_v("Listing events: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list events")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#listing-events-list-events","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list events [-descending] [-st filter_start_time] [-et filter_end_time]")]),_v(" (start time and end time are inclusive)")])}
@@ -149,7 +149,7 @@ with(this){return _c('p',[_v("By default, the list of events are sorted by the s
 with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list events")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list events -st 2023-11-01 -et 2023-11-02")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list events -descending -st 2023-11-01 -et 2023-11-02")])])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"adding-events-add-event"}},[_v("Adding events : "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add event")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#adding-events-add-event","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"adding-events-add-event"}},[_v("Adding events: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add event")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#adding-events-add-event","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add event -id CONTACT_ID -en EVENT_NAME -st START_TIME [-et END_TIME] [-loc LOCATION] [-info INFORMATION]")])])}
@@ -161,7 +161,7 @@ with(this){return _c('ul',[_c('li',[_v("You can use one of the following formats
 with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add event -id 1 -en Meeting with professor -st 12:00 -et 13:00 -loc COM 1 Basement -info Discuss the project implementation with the professor")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add event -id 2 -en Chat with TikTok recruiter -st 17:00")])])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"deleting-an-event-delete-event"}},[_v("Deleting an event : "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete event")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#deleting-an-event-delete-event","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"deleting-an-event-delete-event"}},[_v("Deleting an event: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete event")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#deleting-an-event-delete-event","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete event -id CONTACT_ID -eid EVENT_ID")])])}
@@ -173,13 +173,13 @@ with(this){return _c('ul',[_c('li',[_v("Deletes the event with the id "),_c('cod
 with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete event -id 1 -eid 2")]),_v(" deletes the second event from the first contact in the contact list.")])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"clearing-all-data-clear"}},[_v("Clearing all data : "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("clear")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#clearing-all-data-clear","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"clearing-data-clear"}},[_v("Clearing data: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("clear")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#clearing-data-clear","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("clear")])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"exiting-the-program-exit"}},[_v("Exiting the program : "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("exit")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#exiting-the-program-exit","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"exiting-the-program-exit"}},[_v("Exiting the program: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("exit")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#exiting-the-program-exit","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Format: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("exit")])])}
@@ -215,6 +215,6 @@ with(this){return _c('h2',{attrs:{"id":"command-summary"}},[_v("Command summary"
 with(this){return _c('div',{staticClass:"table-responsive"},[_c('table',{staticClass:"markbind-table table table-bordered table-striped"},[_c('thead',[_c('tr',[_c('th',[_v("Action")]),_v(" "),_c('th',[_v("Format, Examples")])])]),_v(" "),_c('tbody',[_c('tr',[_c('td',[_c('strong',[_v("List Contact")])]),_v(" "),_c('td',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list contact [-t TAGNAME...]")]),_v(" "),_c('br'),_v(" e.g., "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list contact -t Recruiter")])])]),_v(" "),_c('tr',[_c('td',[_c('strong',[_v("Add Contact")])]),_v(" "),_c('td',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add contact -n NAME -p PHONE_NUMBER -a ADDRESS -e EMAIL [-t TAGNAME...]")]),_v(" "),_c('br'),_v(" e.g., "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add contact -n Aaron -p 12345678 -a Baker Street 12 -e aaron123@gmail.com -t Frontend")])])]),_v(" "),_c('tr',[_c('td',[_c('strong',[_v("Delete Contact")])]),_v(" "),_c('td',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete contact CONTACT_ID")]),_c('br'),_v(" e.g., "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete contact 1")])])]),_v(" "),_c('tr',[_c('td',[_c('strong',[_v("Find Contact")])]),_v(" "),_c('td',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find KEYWORD [OTHER_KEYWORDS...]")]),_c('br'),_v(" e.g., "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find Alex")])])]),_v(" "),_c('tr',[_c('td',[_c('strong',[_v("Add Tag")])]),_v(" "),_c('td',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add tag -id CONTACT_ID -t TAGNAME...")]),_v(" "),_c('br'),_v(" eg., "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add tag -id 1 -t Frontend")])])]),_v(" "),_c('tr',[_c('td',[_c('strong',[_v("Delete Tag")])]),_v(" "),_c('td',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete tag -id CONTACT_ID -t TAGNAME...")]),_v(" "),_c('br'),_v(" eg., "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete tag -id 1 -t Frontend")])])]),_v(" "),_c('tr',[_c('td',[_c('strong',[_v("Add Note")])]),_v(" "),_c('td',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add note -id CONTACT_ID -t NOTE_TITLE -c NOTE_CONTENT")]),_v(" "),_c('br'),_v(" e.g., "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add note -id 2 -tit Open Position -con Applications for SWE full-time positions will open soon")])])]),_v(" "),_c('tr',[_c('td',[_c('strong',[_v("Delete Note")])]),_v(" "),_c('td',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete note -id CONTACT_ID -t NOTE_TITLE")]),_c('br'),_v(" e.g., "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete note -id 2 -t Meeting Topics")])])]),_v(" "),_c('tr',[_c('td',[_c('strong',[_v("List Events")])]),_v(" "),_c('td',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list events [-descending] [-st filter_start_time] [-et filter_end_time]")]),_c('br'),_v(" e.g., "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list events -descending -st 2023-11-01 -et 2023-11-02")])])]),_v(" "),_c('tr',[_c('td',[_c('strong',[_v("Add Event")])]),_v(" "),_c('td',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add event -id CONTACT_ID -en EVENT_NAME -st START_TIME [-et END_TIME] [-loc LOCATION] [-info INFORMATION]")]),_v(" "),_c('br'),_v(" e.g., "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add event -id 1 -en Meeting with professor -st 12:00 -et 13:00 -loc COM 1 Basement -info Discuss the project implementation with the professor")])])]),_v(" "),_c('tr',[_c('td',[_c('strong',[_v("Delete Event")])]),_v(" "),_c('td',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete event -id CONTACT_ID -eid EVENT_ID")]),_c('br'),_v(" e.g., "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete event -id 1 -eid 1")])])]),_v(" "),_c('tr',[_c('td',[_c('strong',[_v("Clear Data")])]),_v(" "),_c('td',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("clear")])])]),_v(" "),_c('tr',[_c('td',[_c('strong',[_v("Help")])]),_v(" "),_c('td',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("help [COMMAND_WORD]")]),_v(" "),_c('br'),_v(" e.g., "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("help add")])])])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Thu, 9 Nov 2023, 22:09:28 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Thu, 9 Nov 2023, 23:07:49 GMT+8]")])])])}
 }];
   
