@@ -130,6 +130,7 @@
         "saving-the-data": "Saving the data",
         "other-features": "Other Features",
         "faq": "FAQ",
+        "q-can-i-modify-the-data-file-outside-the-application-itself-a-no-you-should-not-directly-modify-the-data-file-outside-the-application-at-anytime-otherwise-it-may-lead-to-unpredictable-consequences-and-errors-to-the-application": "Q: Can I modify the data file outside the application itself?\nA: No, you should NOT directly modify the data file outside the application at anytime, otherwise it may lead to unpredictable consequences and errors to the application.",
         "known-issues": "Known issues",
         "command-summary": "Command summary"
       },
