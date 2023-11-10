@@ -43,6 +43,16 @@ public class ParserUtil {
      */
     public static Index parseIndex(String oneBasedIndex) throws ParseException {
         String trimmedIndex = oneBasedIndex.trim();
+
+        try {
+            long longValue = Long.parseLong(trimmedIndex);
+            if (longValue > Integer.MAX_VALUE) {
+                return Index.fromOneBased(Integer.MAX_VALUE);
+            }
+        } catch (Exception e) {
+            throw new ParseException(MESSAGE_INVALID_INDEX);
+        }
+
         if (!StringUtil.isNonZeroUnsignedInteger(trimmedIndex)) {
             throw new ParseException(MESSAGE_INVALID_INDEX);
         }
