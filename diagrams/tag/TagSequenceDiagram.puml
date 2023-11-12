@@ -1,0 +1,69 @@
+@startuml
+!include ../style.puml
+skinparam ArrowFontStyle plain
+
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
+participant ":AddCommandParser" as AddCommandParser LOGIC_COLOR
+participant ":AddTagCommandParser" as AddTagCommandParser LOGIC_COLOR
+participant ":AddTagCommand" as AddTagCommand LOGIC_COLOR
+participant "commandResult:CommandResult" as CommandResult LOGIC_COLOR
+
+[-> LogicManager : execute(commandText)
+activate LogicManager
+
+LogicManager -> AddressBookParser : parseCommand(commandText)
+activate AddressBookParser
+
+create AddCommandParser
+AddressBookParser -> AddCommandParser
+activate AddCommandParser
+
+AddCommandParser --> AddressBookParser
+deactivate AddCommandParser
+
+AddressBookParser -> AddCommandParser : parse(commandText)
+activate AddCommandParser
+
+create AddTagCommandParser
+AddCommandParser -> AddTagCommandParser : parse(commandText)
+activate AddTagCommandParser
+
+create AddTagCommand
+AddTagCommandParser -> AddTagCommand
+activate AddTagCommand
+
+AddTagCommand --> AddTagCommandParser
+deactivate AddTagCommand
+
+AddTagCommandParser --> AddCommandParser
+deactivate AddTagCommandParser
+AddTagCommandParser -[hidden]-> AddCommandParser
+destroy AddTagCommandParser
+
+AddCommandParser --> AddressBookParser
+deactivate AddCommandParser
+AddCommandParser -[hidden]-> AddressBookParser
+destroy AddCommandParser
+
+AddressBookParser --> LogicManager
+deactivate AddressBookParser
+
+LogicManager -> AddTagCommand : execute()
+activate AddTagCommand
+
+create CommandResult
+AddTagCommand -> CommandResult
+activate CommandResult
+
+CommandResult --> AddTagCommand : commandResult
+deactivate CommandResult
+
+AddTagCommand --> LogicManager : commandResult
+deactivate AddTagCommand
+AddTagCommand -[hidden]-> LogicManager
+destroy AddTagCommand
+
+[<--LogicManager : commandResult
+deactivate LogicManager
+@enduml

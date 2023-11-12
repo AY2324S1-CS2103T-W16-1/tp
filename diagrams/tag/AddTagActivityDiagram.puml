@@ -1,0 +1,20 @@
+@startuml
+skin rose
+skinparam ActivityFontSize 15
+skinparam ArrowFontSize 12
+start
+:User executes add tag command;
+
+'Since the beta syntax does not support placing the condition outside the
+'diamond we place it as the true branch instead.
+
+if () then ([person exists])
+    :Add new tags to person;
+    :Model updates the person in the address book;
+    :Returns result message notifying
+    that the tags have been added;
+else ([else])
+    :Throw CommandException;
+endif
+stop
+@enduml
