@@ -41,7 +41,7 @@ UserPrefs .up.|> ReadOnlyUserPrefs
 AddressBook *--> "1" UniquePersonList
 AddressBook *--> "1" UniqueEventList
 UniquePersonList --> "~* all" Person
-UniqueEventList --> "~* all" Event
+UniqueEventList -down-> "~* all" Event
 Person *--> Name
 Person *--> Phone
 Person *--> Email
@@ -50,10 +50,9 @@ Person *--> "*" Tag
 Person *--> "*" Note
 Person *--> "*" Event
 
-Person -[hidden]up--> I
-UniquePersonList -[hidden]right-> I
 UniqueEventList -[hidden]right-> UniquePersonList
-
+ModelManager -[hidden]down-> UniquePersonList
+Event -[hidden]down-> Name
 Event -[hidden]right-> Person
 Name -[hidden]right-> Phone
 Phone -[hidden]right-> Address
