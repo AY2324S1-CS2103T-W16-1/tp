@@ -1,7 +1,7 @@
 
     var pageVueRenderFn = function anonymous(
 ) {
-with(this){return _c('div',{attrs:{"id":"app"}},[_m(0),_v(" "),_m(1),_v(" "),_m(2),_v(" "),_c('ul',[_m(3),_v(" "),_m(4),_v(" "),_m(5),_v(" "),_m(6),_v(" "),_c('li',[_m(7),_v(" "),_m(8),_v(" "),_c('pic',{attrs:{"src":"/tp/team/diagrams/event/ListEventsSequenceDiagram.puml"}}),_v(" "),_c('pic',{attrs:{"src":"/tp/team/diagrams/event/ListEventsActivityDiagram.puml"}}),_v(" "),_c('pic',{attrs:{"src":"/tp/team/diagrams/event/DeleteEventSequenceDiagram.puml"}})],1),_v(" "),_m(9)])])}
+with(this){return _c('div',{attrs:{"id":"app"}},[_m(0),_v(" "),_m(1),_v(" "),_m(2),_v(" "),_c('ul',[_m(3),_v(" "),_m(4),_v(" "),_m(5),_v(" "),_m(6),_v(" "),_c('li',[_m(7),_v(" "),_c('ul',[_m(8),_v(" "),_m(9),_v(" "),_m(10),_v(" "),_c('li',[_v("UML diagrams that I made: "),_c('a',{attrs:{"href":"https://github.com/AY2324S1-CS2103T-W16-1/tp/pull/206"}},[_v("#206")]),_v(" "),_c('ul',[_c('li',[_c('pic',{attrs:{"src":"/tp/diagrams/event/ListEventsSequenceDiagram.png"}})],1),_v(" "),_c('li',[_c('pic',{attrs:{"src":"/tp/diagrams/event/ListEventsActivityDiagram.png"}})],1),_v(" "),_c('li',[_c('pic',{attrs:{"src":"/tp/diagrams/event/DeleteEventSequenceDiagram.png"}})],1)])])])]),_v(" "),_m(11),_v(" "),_m(12)])])}
 };
     var pageVueStaticRenderFns = [function anonymous(
 ) {
@@ -29,9 +29,18 @@ with(this){return _c('li',[_c('h4',{attrs:{"id":"contributions-to-the-ug"}},[_v(
 with(this){return _c('h4',{attrs:{"id":"contributions-to-the-dg"}},[_v("Contributions to the DG"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#contributions-to-the-dg","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("Wrote the User Stories part in the DG "),_c('a',{attrs:{"href":"https://github.com/AY2324S1-CS2103T-W16-1/tp/pull/10"}},[_v("#10")])]),_v(" "),_c('li',[_v("Add details about secondary command parser in DG "),_c('a',{attrs:{"href":"https://github.com/AY2324S1-CS2103T-W16-1/tp/pull/47/files#diff-1a95edf069a4136e9cb71bee758b0dc86996f6051f0d438ec2c424557de7160b"}},[_v("#47")])]),_v(" "),_c('li',[_v("UML diagrams that I made: "),_c('a',{attrs:{"href":"https://github.com/AY2324S1-CS2103T-W16-1/tp/pull/206"}},[_v("#206")])])])}
+with(this){return _c('li',[_v("Wrote the User Stories part in the DG "),_c('a',{attrs:{"href":"https://github.com/AY2324S1-CS2103T-W16-1/tp/pull/10"}},[_v("#10")])])}
+},function anonymous(
+) {
+with(this){return _c('li',[_v("Add details about secondary command parser in DG "),_c('a',{attrs:{"href":"https://github.com/AY2324S1-CS2103T-W16-1/tp/pull/47/files#diff-1a95edf069a4136e9cb71bee758b0dc86996f6051f0d438ec2c424557de7160b"}},[_v("#47")])])}
+},function anonymous(
+) {
+with(this){return _c('li',[_v("Add details about implementation on "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("ListEventCommandParser")]),_v(" and "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("ListEventCommand")]),_v(" "),_c('a',{attrs:{"href":"https://github.com/AY2324S1-CS2103T-W16-1/tp/pull/206"}},[_v("#206")]),_v(" "),_c('a',{attrs:{"href":"https://github.com/AY2324S1-CS2103T-W16-1/tp/pull/208"}},[_v("#208")])])}
 },function anonymous(
 ) {
 with(this){return _c('li',[_c('h4',{attrs:{"id":"review-mentoring-contributions"}},[_v("Review/mentoring contributions"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#review-mentoring-contributions","onclick":"event.stopPropagation()"}})]),_v(" "),_c('ul',[_c('li',[_v("Pull requests reviewed:\n"),_c('ul',[_c('li',[_c('a',{attrs:{"href":"https://github.com/AY2324S1-CS2103T-W16-1/tp/pull/32"}},[_v("#32")])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"https://github.com/AY2324S1-CS2103T-W16-1/tp/pull/69"}},[_v("#69")])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"https://github.com/AY2324S1-CS2103T-W16-1/tp/pull/163"}},[_v("#163")])]),_v(" "),_c('li',[_c('a',{attrs:{"href":"https://github.com/AY2324S1-CS2103T-W16-1/tp/pull/168"}},[_v("#168")])])])])])])}
+},function anonymous(
+) {
+with(this){return _c('li',[_c('h4',{attrs:{"id":"contributions-beyond-the-project-team"}},[_v("Contributions beyond the project team"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#contributions-beyond-the-project-team","onclick":"event.stopPropagation()"}})]),_v(" "),_c('ul',[_c('li',[_v("Reported 6 bugs to other team's product during PE-D")])])])}
 }];
   
