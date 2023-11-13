@@ -1,0 +1,24 @@
+@startuml
+skin rose
+skinparam ActivityFontSize 15
+skinparam ArrowFontSize 12
+start
+:User executes delete event command;
+
+'Since the beta syntax does not support placing the condition outside the
+'diamond we place it as the true branch instead.
+
+if () then ([person exists])
+    if () then ([event exists])
+        :Delete event from the person
+        in the address book;
+        :Returns result message with
+        the event that has been deleted;
+    else ([else])
+        :Throw CommandException;
+    endif
+else ([else])
+    :Throw CommandException;
+endif
+stop
+@enduml

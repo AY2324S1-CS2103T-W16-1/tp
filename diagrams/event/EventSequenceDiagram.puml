@@ -1,0 +1,87 @@
+@startuml
+!include ../style.puml
+skinparam ArrowFontStyle plain
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
+participant ":AddCommandParser" as AddCommandParser LOGIC_COLOR
+participant ":AddEventCommandParser" as AddEventCommandParser LOGIC_COLOR
+participant ":AddEventCommand" as AddEventCommand LOGIC_COLOR
+participant "commandResult:CommandResult" as CommandResult LOGIC_COLOR
+end box
+
+box Model MODEL_COLOR_T1
+participant ":Model" as Model MODEL_COLOR
+end box
+
+[-> LogicManager : execute(commandText)
+activate LogicManager
+
+LogicManager -> AddressBookParser : parseCommand(commandText)
+activate AddressBookParser
+
+create AddCommandParser
+AddressBookParser -> AddCommandParser
+activate AddCommandParser
+
+AddCommandParser --> AddressBookParser
+deactivate AddCommandParser
+
+AddressBookParser -> AddCommandParser : parse(commandText)
+activate AddCommandParser
+
+create AddEventCommandParser
+AddCommandParser -> AddEventCommandParser
+activate AddEventCommandParser
+
+AddEventCommandParser -> AddCommandParser
+deactivate AddEventCommandParser
+
+AddCommandParser -> AddEventCommandParser : parse(commandText)
+activate AddEventCommandParser
+
+create AddEventCommand
+AddEventCommandParser -> AddEventCommand
+activate AddEventCommand
+
+AddEventCommand --> AddEventCommandParser
+deactivate AddEventCommand
+
+AddEventCommandParser --> AddCommandParser
+deactivate AddEventCommandParser
+AddEventCommandParser -[hidden]-> AddCommandParser
+destroy AddEventCommandParser
+
+AddCommandParser --> AddressBookParser
+deactivate AddCommandParser
+AddCommandParser -[hidden]-> AddressBookParser
+destroy AddCommandParser
+
+AddressBookParser --> LogicManager
+deactivate AddressBookParser
+
+LogicManager -> AddEventCommand : execute()
+activate AddEventCommand
+
+AddEventCommand -> Model: findPersonByUserFriendlyId(contactId)
+activate Model
+
+Model -> AddEventCommand: person
+deactivate Model
+
+create CommandResult
+AddEventCommand -> CommandResult
+activate CommandResult
+
+CommandResult --> AddEventCommand : commandResult
+deactivate CommandResult
+
+AddEventCommand --> LogicManager : commandResult
+deactivate AddEventCommand
+AddEventCommand -[hidden]-> LogicManager
+destroy AddEventCommand
+
+[<--LogicManager : commandResult
+deactivate LogicManager
+@enduml
