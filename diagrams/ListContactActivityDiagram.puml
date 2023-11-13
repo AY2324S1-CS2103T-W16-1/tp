@@ -1,0 +1,21 @@
+@startuml
+skin rose
+skinparam ActivityFontSize 15
+skinparam ArrowFontSize 12
+start
+:User executes list contact command;
+
+'Since the beta syntax does not support placing the condition outside the
+'diamond we place it as the true branch instead.
+
+if () then ([tags provided])
+    :Model updates contacts list
+    to only show contacts containing
+    at least one of the tags;
+else ([else])
+    :Model updates contacts list
+    to show all contacts;
+endif
+    :Returns success message;
+stop
+@enduml

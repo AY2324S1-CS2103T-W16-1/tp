@@ -1,0 +1,90 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
+participant ":ListCommandParser" as ListCommandParser LOGIC_COLOR
+participant ":ListPersonCommandParser" as ListPersonCommandParser LOGIC_COLOR
+participant ":ListPersonCommand" as ListPersonCommand LOGIC_COLOR
+participant ":CommandResult" as CommandResult LOGIC_COLOR
+end box
+
+box Model MODEL_COLOR_T1
+participant ":Model" as Model MODEL_COLOR
+end box
+
+[-> LogicManager : execute("list contact -t friends")
+activate LogicManager
+
+LogicManager -> AddressBookParser : parseCommand("list contact -t friends")
+activate AddressBookParser
+
+create ListCommandParser
+AddressBookParser -> ListCommandParser
+activate ListCommandParser
+
+ListCommandParser --> AddressBookParser
+deactivate ListCommandParser
+
+AddressBookParser -> ListCommandParser : parse(args)
+activate ListCommandParser
+
+create ListPersonCommandParser
+ListCommandParser -> ListPersonCommandParser
+activate ListPersonCommandParser
+
+ListPersonCommandParser --> ListCommandParser
+deactivate ListPersonCommandParser
+
+ListCommandParser --> ListPersonCommandParser : parse(args)
+activate ListPersonCommandParser
+
+create ListPersonCommand
+ListPersonCommandParser --> ListPersonCommand
+activate ListPersonCommand
+
+ListPersonCommand -->ListPersonCommandParser
+deactivate ListPersonCommand
+
+ListPersonCommandParser --> ListCommandParser
+deactivate ListPersonCommandParser
+
+ListPersonCommandParser -[hidden]-> AddressBookParser
+destroy ListPersonCommandParser
+
+ListCommandParser --> AddressBookParser
+deactivate ListCommandParser
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+ListCommandParser -[hidden]-> AddressBookParser
+destroy ListCommandParser
+
+AddressBookParser --> LogicManager
+deactivate AddressBookParser
+
+LogicManager -> ListPersonCommand : execute()
+activate ListPersonCommand
+
+ListPersonCommand -> Model : updateFilteredPersonList(predicate)
+activate Model
+
+Model --> ListPersonCommand
+deactivate Model
+
+create CommandResult
+ListPersonCommand -> CommandResult
+activate CommandResult
+
+CommandResult --> ListPersonCommand
+deactivate CommandResult
+
+ListPersonCommand --> LogicManager : result
+deactivate ListPersonCommand
+
+ListPersonCommand -[hidden]-> AddressBookParser
+destroy ListPersonCommand
+
+[<--LogicManager
+deactivate LogicManager
+@enduml
