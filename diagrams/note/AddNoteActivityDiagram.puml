@@ -1,0 +1,19 @@
+@startuml
+skin rose
+skinparam ActivityFontSize 15
+skinparam ArrowFontSize 12
+start
+:User executes add note command;
+
+'Since the beta syntax does not support placing the condition outside the
+'diamond we place it as the true branch instead.
+
+if () then ([person exists])
+    :Add a new note to the person in the address book;
+    :Returns result message with
+    the note that has been added;
+else ([else])
+    :Throw CommandException;
+endif
+stop
+@enduml

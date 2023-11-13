@@ -1,0 +1,70 @@
+@startuml
+!include ../style.puml
+skinparam ArrowFontStyle plain
+
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
+participant ":AddCommandParser" as AddCommandParser LOGIC_COLOR
+participant ":AddNoteCommandParser" as AddNoteCommandParser LOGIC_COLOR
+participant ":AddNoteCommand" as AddNoteCommand LOGIC_COLOR
+participant "commandResult:CommandResult" as CommandResult LOGIC_COLOR
+
+[-> LogicManager : execute(commandText)
+activate LogicManager
+
+LogicManager -> AddressBookParser : parseCommand(commandText)
+activate AddressBookParser
+
+create AddCommandParser
+AddressBookParser -> AddCommandParser
+activate AddCommandParser
+
+AddCommandParser --> AddressBookParser
+deactivate AddCommandParser
+
+AddressBookParser -> AddCommandParser : parse(commandText)
+activate AddCommandParser
+
+create AddNoteCommandParser
+AddCommandParser -> AddNoteCommandParser : parse(commandText)
+activate AddNoteCommandParser
+
+create AddNoteCommand
+AddNoteCommandParser -> AddNoteCommand
+activate AddNoteCommand
+
+AddNoteCommand --> AddNoteCommandParser
+deactivate AddNoteCommand
+
+AddNoteCommandParser --> AddCommandParser
+deactivate AddNoteCommandParser
+AddNoteCommandParser -[hidden]-> AddCommandParser
+destroy AddNoteCommandParser
+
+AddCommandParser --> AddressBookParser
+deactivate AddCommandParser
+AddCommandParser -[hidden]-> AddressBookParser
+destroy AddCommandParser
+
+AddressBookParser --> LogicManager
+deactivate AddressBookParser
+
+
+LogicManager -> AddNoteCommand : execute()
+activate AddNoteCommand
+
+create CommandResult
+AddNoteCommand -> CommandResult
+activate CommandResult
+
+CommandResult --> AddNoteCommand : commandResult
+deactivate CommandResult
+
+AddNoteCommand --> LogicManager : commandResult
+deactivate AddNoteCommand
+AddNoteCommand -[hidden]-> LogicManager
+destroy AddNoteCommand
+
+[<--LogicManager : commandResult
+deactivate LogicManager
+@enduml

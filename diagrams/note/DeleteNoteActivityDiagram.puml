@@ -1,0 +1,24 @@
+@startuml
+skin rose
+skinparam ActivityFontSize 15
+skinparam ArrowFontSize 12
+start
+:User executes delete note command;
+
+'Since the beta syntax does not support placing the condition outside the
+'diamond we place it as the true branch instead.
+
+if () then ([person exists])
+    if () then ([note exists])
+        :Delete note from the person
+        in the address book;
+        :Returns result message with
+        the note that has been deleted;
+    else ([else])
+        :Throw CommandException;
+    endif
+else ([else])
+    :Throw CommandException;
+endif
+stop
+@enduml
