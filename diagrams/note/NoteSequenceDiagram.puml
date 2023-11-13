@@ -2,12 +2,18 @@
 !include ../style.puml
 skinparam ArrowFontStyle plain
 
+box Logic LOGIC_COLOR_T1
 participant ":LogicManager" as LogicManager LOGIC_COLOR
 participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
 participant ":AddCommandParser" as AddCommandParser LOGIC_COLOR
 participant ":AddNoteCommandParser" as AddNoteCommandParser LOGIC_COLOR
 participant ":AddNoteCommand" as AddNoteCommand LOGIC_COLOR
 participant "commandResult:CommandResult" as CommandResult LOGIC_COLOR
+end box
+
+box Model MODEL_COLOR_T1
+participant ":Model" as Model MODEL_COLOR
+end box
 
 [-> LogicManager : execute(commandText)
 activate LogicManager
@@ -26,6 +32,12 @@ AddressBookParser -> AddCommandParser : parse(commandText)
 activate AddCommandParser
 
 create AddNoteCommandParser
+AddCommandParser -> AddNoteCommandParser
+activate AddNoteCommandParser
+
+AddNoteCommandParser -> AddCommandParser
+deactivate AddNoteCommandParser
+
 AddCommandParser -> AddNoteCommandParser : parse(commandText)
 activate AddNoteCommandParser
 
@@ -49,9 +61,14 @@ destroy AddCommandParser
 AddressBookParser --> LogicManager
 deactivate AddressBookParser
 
-
 LogicManager -> AddNoteCommand : execute()
 activate AddNoteCommand
+
+AddNoteCommand -> Model: findPersonByUserFriendlyId(contactId)
+activate Model
+
+Model -> AddNoteCommand: person
+deactivate Model
 
 create CommandResult
 AddNoteCommand -> CommandResult
