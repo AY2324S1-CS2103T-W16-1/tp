@@ -26,6 +26,12 @@ AddressBookParser -> AddCommandParser : parse(commandText)
 activate AddCommandParser
 
 create AddTagCommandParser
+AddCommandParser -> AddTagCommandParser
+activate AddTagCommandParser
+
+AddTagCommandParser -> AddCommandParser
+deactivate AddTagCommandParser
+
 AddCommandParser -> AddTagCommandParser : parse(commandText)
 activate AddTagCommandParser
 
