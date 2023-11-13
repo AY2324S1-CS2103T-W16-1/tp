@@ -69,6 +69,8 @@
         "deleting-a-person": "Deleting a person",
         "adding-tag": "Adding tag",
         "deleting-tag": "Deleting tag",
+        "adding-note": "Adding note",
+        "deleting-note": "Deleting note",
         "appendix-c-planned-enhancements": "Appendix C: Planned Enhancements",
         "user-interface": "User Interface"
       },
