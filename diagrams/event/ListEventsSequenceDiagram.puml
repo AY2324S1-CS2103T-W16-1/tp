@@ -1,0 +1,116 @@
+@startuml
+!include ../style.puml
+skinparam ArrowFontStyle plain
+
+box UI UI_COLOR_T1
+participant ":MainWindow" as MainWindow UI_COLOR
+participant ":EventListWindow" as EventListWindow UI_COLOR
+end box
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
+participant ":ListCommandParser" as ListCommandParser LOGIC_COLOR
+participant ":ListEventCommandParser" as ListEventCommandParser LOGIC_COLOR
+participant ":ListEventCommand" as ListEventCommand LOGIC_COLOR
+participant "commandResult:CommandResult" as CommandResult LOGIC_COLOR
+end box
+
+box Model MODEL_COLOR_T1
+participant ":Model" as Model MODEL_COLOR
+end box
+
+-> MainWindow : executeCommand(commandText)
+activate MainWindow
+MainWindow -> LogicManager : execute(commandText)
+activate LogicManager
+
+LogicManager -> AddressBookParser : parseCommand(commandText)
+activate AddressBookParser
+
+create ListCommandParser
+AddressBookParser -> ListCommandParser
+activate ListCommandParser
+
+ListCommandParser --> AddressBookParser
+deactivate ListCommandParser
+
+AddressBookParser -> ListCommandParser : parse(commandText)
+activate ListCommandParser
+
+create ListEventCommandParser
+ListCommandParser -> ListEventCommandParser
+activate ListEventCommandParser
+
+ListEventCommandParser -> ListCommandParser
+deactivate ListEventCommandParser
+
+ListCommandParser -> ListEventCommandParser : parse(args)
+activate ListEventCommandParser
+
+create ListEventCommand
+ListEventCommandParser -> ListEventCommand
+activate ListEventCommand
+
+ListEventCommand --> ListEventCommandParser
+deactivate ListEventCommand
+
+ListEventCommandParser --> ListCommandParser
+deactivate ListEventCommandParser
+ListEventCommandParser -[hidden]-> ListCommandParser
+destroy ListEventCommandParser
+
+ListCommandParser --> AddressBookParser
+deactivate ListCommandParser
+ListCommandParser -[hidden]-> AddressBookParser
+destroy ListCommandParser
+
+AddressBookParser --> LogicManager
+deactivate AddressBookParser
+
+LogicManager -> ListEventCommand : execute()
+activate ListEventCommand
+
+ListEventCommand -> Model: updateFilteredEventList(predicate)
+activate Model
+
+Model -> ListEventCommand
+deactivate Model
+
+ListEventCommand -> Model: generateSortedFilteredEventList(comparator)
+activate Model
+ListEventCommand <- Model : sortedFilteredEventList
+deactivate Model
+
+create CommandResult
+ListEventCommand -> CommandResult
+activate CommandResult
+
+CommandResult --> ListEventCommand : commandResult
+deactivate CommandResult
+
+ListEventCommand --> LogicManager : commandResult
+deactivate ListEventCommand
+ListEventCommand -[hidden]-> LogicManager
+destroy ListEventCommand
+
+MainWindow <-- LogicManager : commandResult
+deactivate LogicManager
+MainWindow --> MainWindow : handleEventList()
+activate MainWindow
+MainWindow --> LogicManager : getSortedFilteredEventList()
+activate LogicManager
+LogicManager --> Model : getSortedFilteredEventList()
+activate Model
+LogicManager <-- Model : sortedFilteredEventList
+deactivate Model
+MainWindow <-- LogicManager : sortedFilteredEventList
+deactivate LogicManager
+MainWindow --> EventListWindow : show(events)
+activate EventListWindow
+MainWindow <-- EventListWindow
+deactivate EventListWindow
+deactivate MainWindow
+destroy CommandResult
+[<--MainWindow
+@enduml

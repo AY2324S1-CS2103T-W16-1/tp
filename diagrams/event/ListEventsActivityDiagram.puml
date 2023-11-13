@@ -1,0 +1,28 @@
+@startuml
+skin rose
+skinparam ActivityFontSize 15
+skinparam ArrowFontSize 12
+start
+:User executes list event command;
+
+if () then ([both exist -st and -et argument or neither exists -st nor -et argument])
+    if () then ([exist -st argument])
+        if() then([valid start time and end time])
+            :Filter the event based on start and end time;
+        else ([else])
+            :Throw CommandException;
+        endif
+    else ([else])
+    endif
+    if () then ([exists -descending argument])
+            :Sort events in descending order;
+        else ([else])
+            :Sort events in ascending order;
+        endif
+    :Returns Result message;
+    :Open a new window to display the event list;
+else ([else])
+    :Throw CommandException;
+endif
+stop
+@enduml

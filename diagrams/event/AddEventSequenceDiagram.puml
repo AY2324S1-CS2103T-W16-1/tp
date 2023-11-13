@@ -38,7 +38,7 @@ activate AddEventCommandParser
 AddEventCommandParser -> AddCommandParser
 deactivate AddEventCommandParser
 
-AddCommandParser -> AddEventCommandParser : parse(commandText)
+AddCommandParser -> AddEventCommandParser : parse(args)
 activate AddEventCommandParser
 
 create AddEventCommand
@@ -61,17 +61,22 @@ destroy AddCommandParser
 AddressBookParser --> LogicManager
 deactivate AddressBookParser
 
-LogicManager -> AddEventCommand : execute()
+LogicManager --> AddEventCommand : execute()
 activate AddEventCommand
 
-AddEventCommand -> Model: findPersonByUserFriendlyId(contactId)
+AddEventCommand --> Model: findPersonByUserFriendlyId(contactId)
 activate Model
 
-Model -> AddEventCommand: person
+Model --> AddEventCommand: person
+deactivate Model
+
+AddEventCommand --> Model: addEvent(toAdd, owner)
+activate Model
+AddEventCommand <-- Model
 deactivate Model
 
 create CommandResult
-AddEventCommand -> CommandResult
+AddEventCommand --> CommandResult
 activate CommandResult
 
 CommandResult --> AddEventCommand : commandResult

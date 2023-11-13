@@ -1,0 +1,92 @@
+@startuml
+!include ../style.puml
+skinparam ArrowFontStyle plain
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
+participant ":DeleteCommandParser" as DeleteCommandParser LOGIC_COLOR
+participant ":DeleteEventCommandParser" as DeleteEventCommandParser LOGIC_COLOR
+participant ":DeleteEventCommand" as DeleteEventCommand LOGIC_COLOR
+participant "commandResult:CommandResult" as CommandResult LOGIC_COLOR
+end box
+
+box Model MODEL_COLOR_T1
+participant ":Model" as Model MODEL_COLOR
+end box
+
+[-> LogicManager : execute(commandText)
+activate LogicManager
+
+LogicManager -> AddressBookParser : parseCommand(commandText)
+activate AddressBookParser
+
+create DeleteCommandParser
+AddressBookParser -> DeleteCommandParser
+activate DeleteCommandParser
+
+DeleteCommandParser --> AddressBookParser
+deactivate DeleteCommandParser
+
+AddressBookParser -> DeleteCommandParser : parse(commandText)
+activate DeleteCommandParser
+
+create DeleteEventCommandParser
+DeleteCommandParser -> DeleteEventCommandParser
+activate DeleteEventCommandParser
+
+DeleteEventCommandParser -> DeleteCommandParser
+deactivate DeleteEventCommandParser
+
+DeleteCommandParser -> DeleteEventCommandParser : parse(args)
+activate DeleteEventCommandParser
+
+create DeleteEventCommand
+DeleteEventCommandParser -> DeleteEventCommand
+activate DeleteEventCommand
+
+DeleteEventCommand --> DeleteEventCommandParser
+deactivate DeleteEventCommand
+
+DeleteEventCommandParser --> DeleteCommandParser
+deactivate DeleteEventCommandParser
+DeleteEventCommandParser -[hidden]-> DeleteCommandParser
+destroy DeleteEventCommandParser
+
+DeleteCommandParser --> AddressBookParser
+deactivate DeleteCommandParser
+DeleteCommandParser -[hidden]-> AddressBookParser
+destroy DeleteCommandParser
+
+AddressBookParser --> LogicManager
+deactivate AddressBookParser
+
+LogicManager -> DeleteEventCommand : execute()
+activate DeleteEventCommand
+
+DeleteEventCommand -> Model: findPersonByUserFriendlyId(contactId)
+activate Model
+
+Model -> DeleteEventCommand: person
+deactivate Model
+
+DeleteEventCommand --> Model : removeEventByID(eventID, owner)
+activate Model
+DeleteEventCommand <-- Model
+deactivate Model
+
+create CommandResult
+DeleteEventCommand -> CommandResult
+activate CommandResult
+
+CommandResult --> DeleteEventCommand : commandResult
+deactivate CommandResult
+
+DeleteEventCommand --> LogicManager : commandResult
+deactivate DeleteEventCommand
+DeleteEventCommand -[hidden]-> LogicManager
+destroy DeleteEventCommand
+
+[<--LogicManager : commandResult
+deactivate LogicManager
+@enduml
