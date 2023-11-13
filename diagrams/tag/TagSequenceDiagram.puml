@@ -2,12 +2,19 @@
 !include ../style.puml
 skinparam ArrowFontStyle plain
 
+box Logic LOGIC_COLOR_T1
 participant ":LogicManager" as LogicManager LOGIC_COLOR
 participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
 participant ":AddCommandParser" as AddCommandParser LOGIC_COLOR
 participant ":AddTagCommandParser" as AddTagCommandParser LOGIC_COLOR
 participant ":AddTagCommand" as AddTagCommand LOGIC_COLOR
 participant "commandResult:CommandResult" as CommandResult LOGIC_COLOR
+end box
+
+box Model MODEL_COLOR_T1
+participant ":Model" as Model MODEL_COLOR
+participant "toEdit:Person" as Person MODEL_COLOR
+end box
 
 [-> LogicManager : execute(commandText)
 activate LogicManager
@@ -57,6 +64,16 @@ deactivate AddressBookParser
 
 LogicManager -> AddTagCommand : execute()
 activate AddTagCommand
+
+AddTagCommand -> Model: findPersonByUserFriendlyId(contactId)
+activate Model
+
+Model -> AddTagCommand: toEdit
+deactivate Model
+
+AddTagCommand -> Person:addTag(toAdd)
+
+AddTagCommand -> Model:setPerson(person, toEdit)
 
 create CommandResult
 AddTagCommand -> CommandResult

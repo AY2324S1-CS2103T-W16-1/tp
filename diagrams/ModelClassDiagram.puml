@@ -42,12 +42,14 @@ AddressBook *--> "1" UniquePersonList
 AddressBook *--> "1" UniqueEventList
 UniquePersonList -down-> "~* all" Person
 UniqueEventList -down-> "~* all" Event
-Person *--> Name
-Person *--> Phone
-Person *--> Email
-Person *--> Address
+Person *--> "1" Name
+Person *--> "1" Phone
+Person *--> "1" Email
+Person *--> "1" Address
 Person *--> "*" Tag
 Person *--> "*" Note
+Person *--> "*" Event
+
 
 UserPrefs -[hidden]down-> UniquePersonList
 ModelManager -[hidden]down-> UniquePersonList
