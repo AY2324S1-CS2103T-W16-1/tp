@@ -67,6 +67,8 @@
         "appendix-b-instructions-for-manual-testing": "Appendix B: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
         "deleting-a-person": "Deleting a person",
+        "adding-event": "Adding event",
+        "deleting-event": "Deleting event",
         "adding-tag": "Adding tag",
         "deleting-tag": "Deleting tag",
         "adding-note": "Adding note",
