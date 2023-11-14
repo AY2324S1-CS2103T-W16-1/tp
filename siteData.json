@@ -73,6 +73,7 @@
         "adding-note": "Adding note",
         "deleting-note": "Deleting note",
         "adding-event": "Adding event",
+        "listing-events": "Listing events",
         "deleting-event": "Deleting event",
         "appendix-c-planned-enhancements": "Appendix C: Planned Enhancements",
         "user-interface": "User Interface"
@@ -127,7 +128,7 @@
         "adding-a-contact-add-contact": "Adding a contact: add contact",
         "deleting-a-contact-delete-contact": "Deleting a contact: delete contact",
         "finding-a-contact-find": "Finding a contact: find",
-        "adding-a-tag-add-tag": "Adding a tag: add tag",
+        "adding-tags-add-tag": "Adding tags: add tag",
         "deleting-tags-delete-tag": "Deleting tags: delete tag",
         "adding-a-note-to-a-contact-add-note": "Adding a note to a contact: add note",
         "deleting-a-note-delete-note": "Deleting a note: delete note",
