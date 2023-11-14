@@ -50,7 +50,7 @@ Person *--> "*" Tag
 Person *--> "*" Note
 Person *--> "*" Event
 
-
+UniqueEventList -[hidden]right-> UniquePersonList
 UserPrefs -[hidden]down-> UniquePersonList
 ModelManager -[hidden]down-> UniquePersonList
 Event -[hidden]down-> Name
